@@ -36,7 +36,7 @@ html, body, #app{
 }
 
 .topbar{
-  background: red;
+  
 }
 
 main{

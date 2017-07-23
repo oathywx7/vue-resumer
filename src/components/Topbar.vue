@@ -1,12 +1,25 @@
 <template>
     <div id="topbar">
-    我是topbar
+        <div class="logo">
+            logo
+        </div>
+        <div class="actions">
+            <button id="registered">注册</button>
+            <button id="input">登录</button>
+        </div>
     </div>
 </template>
 
-<style>
+<style >
   #topbar{
-      border: 1px solid green;
-      min-height: 100px;
+      
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+  }
+  #logo{}
+  #actions{}
+  #topbar >　#actions > #registered{
+      list-style: none;
   }
 </style>
