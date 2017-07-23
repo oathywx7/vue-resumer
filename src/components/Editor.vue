@@ -2,45 +2,37 @@
     <div id="editor">
         <div id="nav">
             <ol>
-                <li>
+                <li v-for="i in [0,1,2,3,4,5]"
+                    v-bind:class="{active:currentTab === i}" 
+                    v-on:click="currentTab = i">
                     <svg class="icon">
-                        <use xlink:href="#icon-credentials_icon"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg class="icon">
-                        <use xlink:href="#icon-work"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg class="icon">
-                        <use xlink:href="#icon-book"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg class="icon">
-                        <use xlink:href="#icon-aixin"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg class="icon">
-                        <use xlink:href="#icon-jiangbei"></use>
-                    </svg>
-                </li>
-                <li>
-                    <svg class="icon">
-                        <use xlink:href="#icon-dianhua"></use>
-                    </svg>
-                </li>
-                <li>
-                <svg class="icon">
-                        <use xlink:href="#icon-credentials_icon"></use>
+                        <use v-bind:xlink:href="`#icon-${icons[i]}`"></use>
                     </svg>
                 </li>
             </ol>
         </div>
+
+        <ol class="panes">
+            <li v-bind:class="{active: currentTab === 0}">tab 1</li>
+            <li v-bind:class="{active: currentTab === 1}">tab 2</li>
+            <li v-bind:class="{active: currentTab === 2}">tab 3</li>
+            <li v-bind:class="{active: currentTab === 3}">tab 4</li>
+            <li v-bind:class="{active: currentTab === 4}">tab 5</li>
+            <li v-bind:class="{active: currentTab === 5}">tab 6</li>
+        </ol>
     </div>
 </template>
+
+<script>
+    export default {
+        data(){
+            return{
+                currentTab: 0,
+                icons: ['credentials_icon','work','book','aixin','jiangbei','dianhua'],
+            }
+        }
+    }
+</script>
 
 <style>
   #editor{
@@ -51,14 +43,28 @@
       width: 80px;
   }
   ol > li{
-      
       padding: 8px 0;
       text-align: center;
   }
+  ol > li.active{
+      background:white;
+  }
+  ol > li.active >.icon{
+      fill: black;
+  }
+
   .icon{
       width: 32px;
       height: 80px;
       fill: #ddd;
       
   }
+
+  .panes > li{
+      display: none;      
+  }
+  .panes > li.active{
+      display: block;
+  }
+  
 </style>
