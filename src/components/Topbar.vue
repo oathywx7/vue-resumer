@@ -3,23 +3,20 @@
         <div class="logo">
             logo
         </div>
-        <div class="actions">
-            <button id="registered">注册</button>
-            <button id="input">登录</button>
+        <div class="actions">            
+            <el-button type="primary">注册</el-button>
+            <el-button >登录</el-button>
         </div>
     </div>
 </template>
 
 <style >
   #topbar{
-      
       display: flex;
       justify-content: space-between;
+      align-items: center;
       padding: 20px;
+      font-size: 20px;
   }
-  #logo{}
-  #actions{}
-  #topbar >　#actions > #registered{
-      list-style: none;
-  }
+ 
 </style>

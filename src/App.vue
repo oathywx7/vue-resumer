@@ -20,7 +20,7 @@ export default {
 }
 </script>
 
-<style>
+<style >
 html, body, #app{
   height: 100%;
   overflow: hidden;
@@ -36,17 +36,37 @@ html, body, #app{
 }
 
 .topbar{
-  
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 1px ;
+}
+.icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+       
 }
 
 main{
   display: flex;
   flex: 1;
+  background: #ddd;
 }
 main > .editor{
-  width: 20em;
+  width: 40em;
+  margin: 16px 8px;
+  background: #fff;
+  box-shadow: 0 0 1px ;
+  border-radius: 4px;
+  overflow: hidden;
 }
 main > .preview{
   flex: 1;
+  margin: 16px 8px;
+  background: #fff;
+  box-shadow: 0 0 1px ;
+  border-radius: 4px;
+  overflow: hidden;
 }
 </style>
