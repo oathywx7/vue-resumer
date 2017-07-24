@@ -59,7 +59,7 @@ main > .editor{
   background: #fff;
   box-shadow: 0 0 1px ;
   border-radius: 4px;
-  overflow: hidden;
+  overflow: auto;
 }
 main > .preview{
   flex: 1;
