@@ -14,28 +14,28 @@
 
         <ol class="panes">
             <li v-bind:class="{active: currentTab === 0}">
-                <profileEditor v-bind:profile="profile"/>
+                <ProfileEditor v-bind:Profile="resume.Profile"/>
 
             </li>
             <li v-bind:class="{active: currentTab === 1}">
-                <workHistoryEditor v-bind:workHistory="workHistory"/>
+                <workHistoryEditor v-bind:workHistory="resume.workHistory"/>
                   
             </li>
 
             <li v-bind:class="{active: currentTab === 2}">
-                <EducationEditor v-bind:Education="Education"/>
+                <EducationEditor v-bind:Education="resume.Education"/>
                        
             </li>
             <li v-bind:class="{active: currentTab === 3}">
-                <experienceEditor v-bind:experience="experience"/>
+                <experienceEditor v-bind:experience="resume.experience"/>
             
             </li>
             <li v-bind:class="{active: currentTab === 4}">
-                <TrophyEditor v-bind:Trophy="Trophy"/>
+                <TrophyEditor v-bind:Trophy="resume.Trophy"/>
             
             </li>
             <li v-bind:class="{active: currentTab === 5}">
-                <contactEditor v-bind:contact="contact"/>
+                <contactEditor v-bind:contact="resume.contact"/>
             
             </li>
         </ol>
@@ -52,40 +52,13 @@
 
     export default {
         components:{ProfileEditor,workHistoryEditor,EducationEditor,experienceEditor,TrophyEditor,contactEditor},
+        props: ['resume'],
         data(){
             return{
                 currentTab: 0,
                 icons: ['credentials_icon','work','book','aixin','jiangbei','dianhua'],
-                labelPosition: '',
-                profile: {
-                    name: '',
-                    city: '',
-                    birth: '',
-                },
-                workHistory: [{
-                    company: '',
-                    dexc: '',
-                    value6: '',
-                }],
-                Education: {
-                    school: '',
-                    content: '',
-                },
-                experience: [
-                    {
-                        project: '',
-                        content: '',
-                    }
-                ],
-                Trophy: [{
-                    name: '',
-                    content: '',
-                }],
-                contact: {
-                    photo: '',
-                    email: '',
-                    palce: '',
-                }
+                
+
             }
         },
         

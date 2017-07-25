@@ -4,20 +4,21 @@
 
         <el-form v-bind:submit="onSubmit"><!--:label-position="labelPosition" label-width="80px" :model="profile">-->
             <el-form-item label="姓名">
-                <el-input v-model="profile.name"></el-input>
+                <el-input v-model="Profile.name"></el-input>
             </el-form-item>
             <el-form-item label="城市">
-                <el-input v-model="profile.city"></el-input>
+                <el-input v-model="Profile.city"></el-input>
             </el-form-item>
             <el-form-item label="出生日期">
-                <el-input v-model="profile.birth"></el-input>
+                <el-input v-model="Profile.birth"></el-input>
             </el-form-item>
+            
         </el-form>
     </div>
 </template>
 <script>
     export default {
-        props: ['profile']
+        props: ['Profile']
     }
 
 </script>

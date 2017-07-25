@@ -7,18 +7,13 @@
                             <el-input v-model="work.company"></el-input>
                         </el-form-item>               
                         <el-form-item label="工作内容">
-                            <el-input type="textarea" v-model="work.desc"></el-input>
+                            <el-input type="textarea" v-model="work.dexc"></el-input>
                         </el-form-item>
 
-                        <div class="block">
-                            <span class="demonstration">工作时间</span>
-                            <p style="padding:8px 0"></p>
-                            <el-date-picker
-                            v-model="work.value6"
-                            type="daterange"
-                            placeholder="选择日期范围">
-                            </el-date-picker>
-                        </div>
+                        <el-form-item label="工作时间">
+                            <el-input v-model="work.time"></el-input>
+                        </el-form-item> 
+                        
                         <i class="el-icon-delete" v-on:click="removeworkHistory(index)"></i>
                         <hr>
                         <p style="padding:8px 0"></p>
