@@ -2,7 +2,7 @@
     <div>
         <h2>项目经历</h2>
                 <el-form >
-                    <div v-for="(exper,index) in experience">
+                    <div class="container" v-for="(exper,index) in experience">
                         <el-form-item label="项目">
                             <el-input v-model="exper.project"></el-input>
                         </el-form-item>               

@@ -2,7 +2,7 @@
     <div>
         <h2>获奖证书</h2>
                 <el-form >
-                    <div v-for="(Trophy,index) in Trophy">
+                    <div class="container" v-for="(Trophy,index) in Trophy">
                         <el-form-item label="奖项">
                             <el-input v-model="Trophy.name"></el-input>
                         </el-form-item>               

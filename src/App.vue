@@ -21,33 +21,33 @@ export default {
         resume: {
           labelPosition: '',
           Profile: {
-              name: '',
-              city: '',
-              birth: '',
+              name: '石乐志',
+              city: '北海以南',
+              birth: '1994.2.1',
           },
           workHistory: [{
-              company: '',
-              dexc: '',
-              time: '',
+              company: '北上广公司',
+              dexc: '公司总部设在XXXX区，先后在北京、上海成立分公司。专注于移动XXX领域，主打产品XXXXX，它将资讯、报纸、杂志、图片、微信等众多内容，按照用户意愿聚合到一起，实现深度个性化 定制。\n 我的主要工作如下: \n1. 完成既定产品需求。 \n2. 修复 bug。',
+              time: '1998~2000',
           }],
           Education: {
-              school: '',
-              content: '',
+              school: '蓝翔技术专修学院',
+              content: '中国山东找蓝翔',
           },
           experience: [
               {
-                  project: '',
-                  content: '',
+                  project: 'project A',
+                  content: '巴拉巴拉',
               }
           ],
           Trophy: [{
-              name: '',
-              content: '',
+              name: '好人卡',
+              content: '你是个好人，但是我们不能在一起 ',
           }],
           contact: {
-              photo: '',
-              email: '',
-              place: '',
+              photo: '15012345678',
+              email: '159268347@sina.com',
+              place: '霍尔沃兹魔法学院',
           }
         }
       }

@@ -94,6 +94,13 @@
   .panes{
       flex: 1;
   }
+  .panes  .container{
+      position: relative;
+  }
+  .panes  .container  .el-icon-delete{
+      position: absolute;
+      right: 0; top: 0;
+  }
   .panes > li{
       display: none;
       padding: 32px;

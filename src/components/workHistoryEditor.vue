@@ -1,6 +1,6 @@
 <template>
     <div>
-    <h2>工作经历</h2>
+        <h2>工作经历</h2>
                 <el-form >
                     <div class="container" v-for="(work,index) in workHistory">
                         <el-form-item label="公司名称">
